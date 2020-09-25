@@ -1,14 +1,79 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+{ box-sizing: border-box;}
+
+
+
+.header-section {grid-area: header;}
+.menu-section {grid-area: navmenu;}
+.main-section {grid-area: main; }
+.images-section {grid-area: images;}
+.footer-section {grid-area: footer;}
+
+
+.menu-section a { 
+    border:2px
+    color: burlywood; 
+    padding: 0.25rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'navmenu'
+        'main'
+        'images'
+        'footer'   
     
 }
+.header-section {
+    display: flex;
+    padding: 0 .6em;
+    
+}
+img { 
+    max-width: 100%;
+    }
 
 body {
     background-color: #844747;
     margin: 0 auto
     padding: 0 20px 20px 20px;
     border: 5px solid black;
-}
-h2 {
     font-family: 'Grenze Gotisch', cursive;
+}
+.main-section h2 {
     color: burlywood;
+}
+@ media screen(min-width: 550px) {
+   .grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'navmenu main'
+        'images images'
+        'footer footer'   
+        
+    .menu-section {
+        display: flex; 
+        flex-direction: row;
+        text-decoration: none;
+       }
+    }
+    
+}
+
+@ media screen(min-width: 800px) {
+    .grid-container {
+    display: grid;
+    grid-template-areas: 
+        'header header header'
+        'navmenu main main'
+        'main images images'
+        'footer footer footer'   
+     
+}
+    
+    
 }
