@@ -1,0 +1,143 @@
+.html {
+
+    font-size=16px;
+    
+}
+
+
+body {
+    background-color: darkred; 
+    font-family: "Montserrat", sans-serif;
+    max-width: 1600px; 
+    margin: 0;
+    padding: 2rem;
+}
+
+.photo image {
+    width: 100%
+    max-width:400px;
+    height: auto; 
+    border-radius: 50% 
+        
+}
+
+header {
+    color: #ffbd33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+nav {
+    grid-area: nav;
+    display: grid; 
+}
+
+nav a {
+    font-size: 1.35rem;
+    background-color: antiquewhite;
+    padding: .5rem;
+    border: solid;
+    text-decoration: none;
+    outline: none;
+    margin: .75%;
+
+}
+
+.body-grid-item {
+    border: groove; 
+    padding: 1rem;
+    background-color: antiquewhite
+}
+
+.Summary-grid-item {
+    border: groove; 
+    padding: .5rem;
+    background-color: darkgray;
+    grid-area: summary;    
+}
+
+.Work-Exp-grid-item {
+    grid-area: work;
+    border: groove;
+    padding: .5rem;
+}
+
+.Education-grid-item {
+    grid-area: education;
+    border: groove; 
+    padding: 1rem;
+}
+
+.Reference-grid-item {
+    grid-area: reference;
+    border: groove;  
+    padding: 1rem;
+}
+
+.ref-1 {
+    grid-area: ref-1;
+}
+
+.ref-2 {
+    grid-area: ref-2;
+}
+
+.ref-header {
+    grid-area: ref-header;
+}
+
+
+.Certs-grid-item {
+    grid-area: certs;
+    border: groove; 
+    padding: 1rem;
+}
+
+
+.Hobbies-grid-item {
+    grid-area: hobbies;
+    border: groove;  
+    padding: 1rem;
+}
+
+
+.footer-grid-area {
+    grid-area: footer;
+}
+
+@media (min-width: 730px) {
+    
+nav {
+    display: flex; 
+    flex-direction: row;
+}
+    
+    
+    .body-grid-item {
+        display:grid;
+        grid-template: repeat (4, 600px), repeat (2, 200px);
+        grid-template-areas: "summary summary"
+                        "work education"   
+                        "work certs"
+                        "work hobbies"
+                        "reference reference"
+    }
+       
+}
+
+@media (min-width: 1000px) {
+    
+    .body-grid-item {
+        display:grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "summary summary work"
+                        "education certs work"   
+                        "hobbies reference work"
+                
+    }
+       
+}
