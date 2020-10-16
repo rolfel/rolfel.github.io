@@ -18,7 +18,7 @@ header {
 
 body {
     width: 100%; 
-    height: 100%;
+    height: 30%;
     min-height: 100vh;
     background: url(https://picsum.photos/id/102/300/400) no-repeat;
     background-position: center; 
@@ -32,45 +32,71 @@ body {
 
 .body-text {
     background-color: rgba(162, 73, 54, 30%); 
-    font-size: 200%;
+    font-size: 300%;
     text-align: center; 
     padding: 20px; 
     font-family: 'Playfair Display', serif;
     text-decoration: none;
     clip-path:ellipse(); 
+    position: relative;
+    top:-80px; 
 
 }
 
 
 footer {    
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;     
 }
 
 
 a:link {
-    color: bisque; 
+    color: black; 
     text-decoration: none; 
 }
 
 
 a:visited {
-  color: hotpink;
+  color: aquamarine;
   text-decoration: none;
 }
 
 a:hover {
     text-shadow: 1px 1px 1px #ccc; 
-    text-decoration: underline;
+    text-decoration: underline; 
 }
 
 a:active {
-  text-decoration: underline;
+  color: blueviolet; 
+    text-decoration: none; 
+}
+
+@media (min-width: 650px) {
+        
+        .body-text {
+        clip-path:inset(20px 20px 20px 20px);
+    
+    }
+    
+    
 }
 
 
+@media (min-width: 800px) {
+      body {
+        background: url(https://picsum.photos/id/1080/1600/1400) no-repeat;  
+        background-position: center; 
+        background-size: cover;
+        color:white; 
+        background-color: rgba(51, 255, 241, 30%);   }
+}
 
-
-
+@media (min-width: 1100px) {
+    body-text {
+        position: relative;
+        top:-150px;        
+       
+    } 
+}
 
