@@ -12,6 +12,7 @@ header {
 
 .h1 {
     font-family: 'Lobster', cursive; 
+    text-decoration: none; 
 }
 
 
@@ -36,13 +37,40 @@ body {
     padding: 20px; 
     font-family: 'Playfair Display', serif;
     text-decoration: none;
-    clip-path:circle (20%); 
+    clip-path:ellipse(); 
 
 }
+
 
 footer {    
     width: 100%;
     position: absolute;
     bottom: 0;     
 }
+
+
+a:link {
+    color: bisque; 
+    text-decoration: none; 
+}
+
+
+a:visited {
+  color: hotpink;
+  text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 1px 1px 1px #ccc; 
+    text-decoration: underline;
+}
+
+a:active {
+  text-decoration: underline;
+}
+
+
+
+
+
 
