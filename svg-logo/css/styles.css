@@ -1,0 +1,37 @@
+body {
+    background-color: azure;   
+    margin: 0;
+    
+}
+
+.header {
+    margin: 0;
+}
+
+.svg-logo {
+    margin:0; 
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+.svg-logo img {
+    display:block;
+    margin:o auto;
+    width:100%
+    
+}
+
+@media (min-width:1200px) {
+    
+    .svg-logo img {
+        border: .5px solid; 
+        border-color:black; 
+        padding: 15px; 
+    }
+}
