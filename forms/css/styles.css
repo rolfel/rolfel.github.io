@@ -1,0 +1,96 @@
+html {
+    font-size: 16px; 
+    font: sans-serif;
+}
+    
+    
+    
+body {
+    background-color: azure;   
+    margin: 0;
+    
+}
+
+.header {
+    display: grid;  
+    margin: 10px; 
+}
+
+
+.socialmedia img, 
+.searchicon img, 
+.shoppingcart img {
+    width: 100%;
+    max-width: 30px;    
+}
+
+
+main {
+    display: grid; 
+    grid-gap: 1px; 
+    grid-template-rows:1fr 1fr 1fr;
+    background-color: cadetblue; 
+    
+}
+
+
+.svg-logo {
+    margin:0; 
+
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:grid;
+    align-items: center; 
+    justify-content: center;
+
+}
+
+.svg-logo img {
+    display:block;
+    margin:o auto;
+    width:100%; 
+    
+}
+
+.subheading {
+    color: black; 
+    font-size:2.25rem; 
+    display: inline-flex; 
+    padding: 10px 0px 0px 0px;  
+    justify-content: center;
+    background-color: antiquewhite; 
+    width: 100%; 
+    height: 50%; 
+
+}
+
+.request-info {
+    display: grid; 
+    align-items: center; 
+    justify-content: center;
+    
+    
+}
+
+.nav-links {
+    display: block; 
+    padding: 20px;  
+    font-size: 1.5rem;
+    text-align: center;
+    color: burlywood; 
+}
+
+@media (min-width:350px) {
+    .subheading {
+        font-size:3rem; 
+    }
+}
+
+@media (min-width:1200px) {
+    
+    .svg-logo img {
+        padding: 15px; 
+    }
+}
