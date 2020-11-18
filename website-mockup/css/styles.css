@@ -1,0 +1,186 @@
+body {
+    background-color: azure;   
+    margin: 0;
+    
+}
+
+/* Index Page Styles */
+
+.socialmediaindex {
+    width:100%;
+    display: inline-block; 
+}
+
+.socialmediaindex img {
+    width:2.0rem;
+    height:2.0rem;
+    padding:.5rem;
+}
+
+.header {
+    display: grid; 
+    align-items: center; 
+    grid-auto-flow: row;
+    padding:2rem;
+}
+
+.svg-logo {
+    margin:0; 
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding:0.5rem; 
+}
+
+.svg-logo img {
+    display:block;
+    margin:0 auto;
+    width:100%;
+    
+}
+
+.logosubheader {
+    text-align: center; 
+    font-size:1.5rem; 
+}
+
+
+/* Index Page Media Query */
+
+@media (min-width:350px) {
+    .logosubheader {
+    font-size:2.5rem; 
+    }    
+}
+
+@media (min-width:500px) {
+    .logosubheader {
+    font-size:3.0rem; 
+    }    
+}
+
+
+/* Home and Contact Page Styles */
+
+.siteheader {
+    display: grid; 
+    align-items: center; 
+    grid-auto-flow: row; 
+    padding:1rem; 
+    
+}
+
+
+.socialmedia img {
+    width:2.0rem;
+    height:2.0rem;
+    padding:.5rem;
+}
+
+
+.searchbar {
+    width: 75%;
+    padding: 5px; 
+}
+
+.shoppingcart {
+    padding: 5px; 
+}
+
+.photos img {
+    width: 100%; 
+    position: relative;
+    text-align: center; 
+    color:black; 
+}
+
+.fadein {
+    text-align: center; 
+    font-size: 2rem; 
+    color: black; 
+    text-decoration: none; 
+}
+
+.photofront1:hover {
+    opacity: 75%;
+    border: 5px; 
+     border-color: black; 
+    border-style: double; 
+}
+
+
+.photofront2:hover {
+    opacity: 75%;
+    border: 5px; 
+     border-color: black; 
+    border-style: double; 
+}
+
+.photofront3:hover {
+    opacity: 75%;
+    border: 5px; 
+     border-color: black; 
+    border-style: double; 
+}
+
+.photofront4:hover {
+    opacity: 75%;
+    border: 5px; 
+    border-color: black; 
+    border-style: double; 
+}
+
+.request-info {
+    font-size: 1.5rem;
+    max-width: 750px; 
+    margin: 0 auto; 
+    padding-bottom: 2rem; 
+}
+
+
+input {
+    display: block; 
+    padding-bottom: 1rem; 
+}
+
+.nav-links {
+    font-size: 1.5rem;
+    border:2px;
+    text-align: center; 
+    text-decoration: none; 
+    
+}
+
+.copyright {
+    padding: 1.5rem; 
+    
+}
+
+
+/* Home and Contact Page Media Queries */
+
+@media (min-width:600px){
+    .photos {
+        display: grid;
+        grid-template-columns: auto auto;
+        
+    }
+    
+}
+
+@media (min-width:1200px){
+    .photos {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        
+    }
+    
+}
+
+
+
