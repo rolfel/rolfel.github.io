@@ -1,0 +1,311 @@
+html,body{
+margin: 0;
+}
+
+body{
+margin: 0;
+background-image: url('../Images/2f3c40585e2b545340615d7d865a8d98l-w3295100485xd-w1020_h770_q80.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+position: relative;
+}
+
+/* Header CSS */
+.header1{
+  background-color: green;
+  width: 1600px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: nowrap;
+   text-align: center;
+   font-size: 36px;
+   position: relative;
+}
+
+/* Body CSS */
+.main-form{
+ border: 1px solid black;
+ background-color: white;
+ width: 1000px;
+ height: 600px;
+ overflow-y: hidden;
+}
+.contact-info{
+ 
+}
+
+input[type = "text"]{
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px; 
+  border: 1px solid black;
+  resize: vertical;
+}
+
+h2{
+  text-align: center;
+  color: black;
+  font-size: 36px;
+
+}
+
+.about-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/* CSS for buttons */
+.btn-container{
+ margin: 0px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+
+button{
+  max-width: 500px;
+  display: inline-block;
+  margin: 0px;
+  font-size: 24px;
+}
+
+.buttons{
+  margin-top: 60px;
+}
+
+.button-activities{
+  width: 200px;
+}
+
+.submit-btn{
+ margin-top: 50px;
+}
+
+.agree{
+ margin-top: 20px;
+}
+
+.tab-btn{
+ display: inline-block;
+ background-color: red;
+ font-size: 22px;
+ color: black;
+ margin: -1px;
+ width: 202px;
+ height: 50px;
+ cursor: pointer;
+}
+
+
+/* CSS for home tab */
+.content p{
+text-align: center;
+}
+/* CSS for Activities tab */
+
+.activities-btn{
+ width: 150px;
+ font-size: 20px;
+ margin: 0;
+ padding: 0;
+ margin: -3px;
+}
+
+
+.parks-btn{
+
+
+}
+
+.parksPhoto{
+  width: 300px;
+  height: 300px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.venues-btns{
+  margin-top: 60px;
+}
+
+.picture1{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ height: 300px;
+ width: 300px;
+}
+
+.picture2{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ width: 300px;
+ height: 300px;
+}
+
+/*Hover effect for tabs */
+
+
+
+/*Hide Content */
+.content {
+  display: none;
+}
+.tab-btn.active {
+  background: white;
+}
+.content.active {
+  display: block;
+}
+
+/*Media queries */
+@media(min-width: 500px){
+body{
+  background: url('2f3c40585e2b545340615d7d865a8d98l-w3295100485xd-w1020_h770_q80.jpg') no-repeat, cover;
+  height: 500px;
+  overflow-x: hidden;
+}
+button{
+  display: block;
+  width: 100%;
+}
+}
+
+@media(min-width: 650px){
+
+}
+
+@media(min-width: 800px){
+  button{
+    width: 195px;
+    display: inline-block;
+   }
+}
+
+@media(max-width: 375px){
+  .btn-container{
+   max-width: 420px;
+  }
+  .tab-btn{
+   font-size: 18px;
+  }
+
+  h1{
+    font-size: 30px;
+  }
+
+  body{
+    overflow-y: hidden;
+  }
+  }
+
+  @media(max-width: 414px){
+   .tab-btn{
+     font-size: 18px;
+   }
+
+   .btn-container{
+     max-width: 420px;
+   }
+  }
+
+  @media(max-width: 320px){
+   .tab-btn{
+     font-size: 16px;
+   }
+  }
+
+  ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: 94%;
+  background: #1abc9c;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1abc9c;
+  color: white !important
+}
+  
+
+
+  
+ 

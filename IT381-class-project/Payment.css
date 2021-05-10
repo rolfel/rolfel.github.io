@@ -1,0 +1,32 @@
+html,body{
+    margin: 0;
+    }
+    
+    body{
+    margin: 0;
+    background-image: url('../Images/2f3c40585e2b545340615d7d865a8d98l-w3295100485xd-w1020_h770_q80.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    }
+    
+    /* Header CSS */
+    .header1{
+      background-color: green;
+      width: 1600px;
+      height: 100px;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    
+    h1{
+       display: flex;
+       justify-content: flex-start;
+       align-items: flex-start;
+       flex-wrap: nowrap;
+       text-align: center;
+       font-size: 36px;
+       position: relative;
+    }
+    
