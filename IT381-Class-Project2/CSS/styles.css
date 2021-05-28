@@ -1,0 +1,490 @@
+html,body{
+margin: 0;
+}
+
+*{
+ margin: 0;
+ padding: 0;
+}
+
+body{
+margin: 0;
+background-image: url('../Images/mountainbackground.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+position: relative;
+}
+
+/* Header CSS */
+.header1{
+  background-color: green;
+  width: 1600px;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1{
+   display: flex;
+   justify-content: flex-start;
+   align-items: flex-start;
+   flex-wrap: nowrap;
+   text-align: center;
+   font-size: 24px;
+   position: relative;
+}
+
+h1 a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+
+h2{
+  color: black;
+  margin-left: 50px;
+  font-size: 34px;
+  margin-bottom: 0px;
+
+}
+
+/* Body CSS */
+.main-form{
+ border: 1px solid black;
+ background-color: white;
+ width: 800px;
+ height: 600px;
+ overflow-y: hidden;
+}
+.contact-info{
+ 
+}
+input[type = "text"]{
+  width: 400px; 
+  display: block;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 30px; 
+  margin-bottom: 16px; 
+  border: 1px solid black;
+  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type = "tel"]{
+  width: 400px; 
+  display: block;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 30px; 
+  margin-bottom: 16px; 
+  border: 1px solid black;
+  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-content{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+/*CSS for modal */
+.modal-wrapper {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.modal-wrapper.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-container {
+  background: #fff;
+  margin: 1em;
+  max-width: 100%;
+  width: 600px;
+  z-index: 100;
+}
+
+.modal-header {
+  background: #333;
+		display:flex;
+		align-items:center;
+		padding:.5rem 2rem;
+}
+
+.modal-title {
+  color: #fff;
+  font-size: 2em;
+  margin: 0;
+		width:90%;
+		
+}
+
+.close-modal,
+.close-modal-2 {
+  background: transparent;
+  border: 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 2.5rem;
+  opacity: 0.4;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+		width:10%;
+		
+}
+
+.close-modal:hover,
+.close-modal-2:hover { opacity: 1; }
+
+.modal-content {
+  margin: 0;
+  padding: 1rem 2rem;
+  width: 100%;
+}
+
+#open-modal{
+  border: none;
+
+}
+
+#open-modal-2{
+  border: none;
+}
+
+.modal-container input{
+	display:block;
+	width:100%;
+	max-width:400px;
+  outline:none;
+	border: 1px solid #444;
+	border-radius:5px;
+	padding: 10px 15px;
+   margin-bottom: 5px;
+}
+
+.modal-container button{
+  width:100px;
+  margin:1rem 0;
+  padding:.5rem;
+  font-size:.85rem;
+  border:1px solid #444;
+  color:#333;
+  border-radius:5px;
+}
+
+/* CSS for buttons */
+.btn-container{
+ margin: 0px;
+ display:flex;
+ justify-content: center;
+ align-items: center;
+}
+
+button{
+  width: 500px;
+  display: inline-block;
+  margin: 0px;
+  font-size: 20px;
+}
+
+.buttons{
+  margin-top: 60px;
+}
+
+.button-activities{
+  width: 200px;
+}
+
+.sbmit-btn{
+  width: 200px;
+  float: right;
+
+}
+
+
+
+.submit-btn{
+ margin-top: 30px;
+ height: 50px;
+ width: 100px;
+ float: right;
+}
+
+.agree{
+ margin-top: 20px;
+}
+
+.tab-btn{
+ display: inline-block;
+ background-color: red;
+ font-size: 22px;
+ color: black;
+ margin: -1px;
+ width: 202px;
+ height: 50px;
+ cursor: pointer;
+}
+
+img{
+  width: 200px;
+  height: 150px;
+}
+
+
+/* CSS for home tab */
+.content p{
+text-align: center;
+}
+
+h3{
+  text-align: center;
+  font-size: 36px;
+}
+/* CSS for Activities tab */
+
+.activities-btn{
+ width: 600px;
+ font-size: 20px;
+ margin: 0;
+ padding: 0;
+ margin: -3px;
+}
+
+
+/* Buttons for venues */
+
+.parks-btn, .Gym-btn, .Arena-btn, .Courts-btn{
+  width: 300px;
+  height: 60px;
+  display: block;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+p{
+  font-size: 24x;
+}
+
+
+.venues-btns{
+  margin-top: 60px;
+}
+
+
+/* CSS for Scheduling */
+
+select{
+  display: block;
+  margin-top: 100px;
+  
+}
+
+/*CSS for contact page and inputs */
+input[type = "text"]{
+  width: 400px; 
+  display: block;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 30px; 
+  margin-bottom: 16px; 
+  border: 1px solid black;
+  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input[type = "tel"]{
+  width: 400px; 
+  display: block;
+  padding: 12px; 
+  border: 1px solid #ccc; 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 30px; 
+  margin-bottom: 16px; 
+  border: 1px solid black;
+  resize: vertical;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contactt_form{
+height: 800px;
+}
+/*Hover effect for tabs */
+
+
+
+/*Hide Content */
+.content {
+  display: none;
+}
+.tab-btn.active {
+  background: white;
+}
+.content.active {
+  display: block;
+    align-content: center;
+}
+
+.Success{
+  display: block;
+}
+
+/*Media Queries */
+
+@media(min-width: 500px){
+  body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+  
+  h2{
+   font-size: 30px;
+  }
+
+  h3{
+    font-size: 30px;
+  }
+  
+  .racketball-btn, .btnSoccer, .basketball-btn, .baseball-btn{
+    width: 250px;
+    display: block;
+    margin-left: 55px;
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  .parks-btn, .Gym-btn, .Arena-btn, .Courts-btn{
+    width: 250px;
+    display: block;
+    margin-left: 55px;
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  select{
+    width: 250px;
+    display: block;
+    margin-top: 40px;
+    height: 60px;
+    margin-left: 55px;
+  }
+
+  .submit-btn{
+    margin-top: 10px;
+    margin-right: 50px;
+    height: 30px;
+  }
+}
+
+@media(min-width: 650px){
+  h2{
+   font-size: 32px;
+  }
+
+  h3{
+   font-size: 32px;
+  }
+  .submit-btn{
+   margin-right: 120px;
+  }
+
+  .parks-btn, .Gym-btn, .Arena-btn, .Courts-btn{
+    width: 270px;
+  }
+
+  .racketball-btn, .btnSoccer, .basketball-btn, .baseball-btn{
+   width: 270px;
+  }
+
+  select{
+   width: 270px;
+  }
+}
+@media(min-width: 800px){
+  h2{
+  font-size: 34px;
+  }
+
+  h3{
+   font-size: 34px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .racketball-btn, .btnSoccer, .basketball-btn, .baseball-btn{
+    width: 300px;
+    display: block;
+    margin-left: 55px;
+    margin-top: 20px;
+    height: 60px;
+  }
+
+  .parks-btn, .Gym-btn, .Arena-btn, .Courts-btn{
+    width: 300px;
+  }
+
+  select{
+    width: 300px;
+  }
+  .submit-btn{
+    margin-right: 200px;
+  }
+  h2{
+    font-size: 36px;
+  }
+
+  h3{
+    font-size: 36px;
+  }
+
+  .btn-next{
+    width: 200px;
+    margin-left: 500px;
+    margin-top: 50px;
+  }
+}
+
+  
+
+  ul {list-style-type: none;}
+body {font-family: Verdana, sans-serif;}
+  
+
+
+  
+ 

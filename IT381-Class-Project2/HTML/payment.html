@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../CSS/Payment.css">
+</head>
+
+<body>
+
+  <!--Header-->
+    <header>
+        <section class="header">
+			<div class="header1">
+				<i class="fas fa-circle"></i>
+				<h1><a href = "index.html">Ellensburg<br> 
+                    Parks and Recreation</a></h1>
+			</div>
+		</section>
+        </header>
+
+  <!--Container for buttons-->
+        <section class="about-center section center">
+          <article class="about">
+            <div class="btn-container">
+              <button class="tab-btn active" data-id="Payment">Payment</button> 
+            </div>
+
+  <!--Content-->
+            <div class="about-content">
+              <form class="main-form" id = "payment" class="form">
+                <div class="content active" id="Home">
+                  <input type = "text" placeholder= "Name on Card" />
+                  <input type = "text" placeholder="Card Number" />
+                  <input type = "text" placeholder="Billing Address">
+                  <input type = "text" placeholder="CVC">
+                  <input type = "text" placeholder="Expiration Date"> </div>
+                 <div class="center-button" id ="centeredbutton" class = "centerbutton"> <button class = "submit">Submit</button></div>
+               
+              </form>
+              </div>
+          </article>
+    </section>
+</body>
+<script src="../Javascript/payment.js"></script>
+</html>

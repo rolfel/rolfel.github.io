@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ellensburg Parks and Recreation Home</title>
+	<meta content="width=device-width,initial-scale=1" name="viewport">
+	<link href="../CSS/styles.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	
+</head>
+<body>
+	<header>
+		<!--Header-->
+		<section class="header">
+			<div class="header1">
+				<i class="fas fa-circle"></i>
+				<img src = "../Images/logo2.png">
+				<h1><a href = "index.html">Ellensburg<br> 
+                 Parks and Recreation<br>Home
+                    </a> </h1>
+			</div>
+		</section>
+	</header>
+	<!--Body-->
+	<section class="about-center section center">
+		<article class="about">
+			<div class="btn-container">
+				<button class="tab-btn active" data-id="Activities">Activities</button>
+				<button  class="tab-btn" data-id="Venues">Venues</button>
+				<button class="tab-btn" data-id="Scheduling">Schedule</button> 
+				<button class="tab-btn" data-id="Contact">Contact Us</button>
+			</div>
+			<!--Content-->
+			<div class="about-content">
+				<form class="main-form">
+
+				
+			<!--Content for home page-->
+					<div class="content active" id="Home">
+						<br><h3>Welcome to Ellensburg</h3><br>
+						<p>Welcome to the Ellensburg Parks and Recreation Department website!<br><br>
+						 This site allows you to reserve parks and venues for a variety of events.<br>
+						 We provide a wide variety of activities, including Racquetball, Soccer, Baseball, and Basketball.<br><br>
+						 In order to access this website, please login with your account.
+						 <br>Below are the links to register and log in.<br><br>
+
+						</p>
+						<button class = "log-in" id = "open-modal">New User Sign Up</button>
+						<button class = "Sign-Up" id = "open-modal-2">Current User Log In</button>
+					</div>
+			
+            
+				 <!--Content for activities-->
+				 
+					<div class="content" id="Activities" data-id="1">
+						<br><h2>Activities</h2>
+						<div class = "images">
+						</div>
+						<div class = "buttons">
+						<button class = "racketball-btn" data-id="Racketball">Racquetball</button>
+						<button class="btnSoccer" data-id="Soccer">Soccer</button>
+						<button class="baseball-btn" data-id="Baseball">Baseball</button>
+						<button class="basketball-btn" data-id="Basketball">Basketball</button>
+                            <button class = "btn-next"><a href = "#Scheduling">Next</a></button>
+					</div>
+				</div>
+
+					<!--Content for Venues-->
+					<div class="content" id="Venues" data-id="2">
+						<br><h2>Venues</h2>
+					 <div class = "venues-btns" id = "Venuesbtns">
+						<button class="parks-btn" data-id="parks">Parks</button> 
+						<button class="Gym-btn" data-id="Gyms">Gyms</button> 
+						<button class="Arena-btn" data-id="Arenas">Arenas</button> 
+						<button class="Courts-btn" data-id="Courts">Courts</button>
+                         <button class = "btn-next"><a href = "#Scheduling">Next</a></button>
+					</div>
+					</div>
+				
+
+               <!--Scheduling-->
+					<div class="content" id="Scheduling" data-id="3">
+						<br><h2>Select a date</h2>
+					 <div class = "Select-btns">
+					  <select>
+					   <option value = "0">Select Month</option>
+					   <option value = "1">Febuary</option>
+					   <option value = "2">March</option>
+					   <option value = "3">April</option>
+					   <option value = "4">May</option>
+					   <option value = "5">June</option>
+					   <option value = "6">July</option>
+					   <option value = "7">August</option>
+					   <option value = "8">September</option>
+					   <option value = "9">October</option>
+					   <option value = "10">November</option>
+					   <option value = "11">December</option>
+					   <option value = "12">January</option>
+
+					  </select>
+
+					  <select>
+						<option value = "0">Select Day</option>
+						<option value = "1">1</option>
+						<option value = "2">2</option>
+						<option value = "3">3</option>
+						<option value = "4">4</option>
+						<option value = "5">5</option>
+						<option value = "6">6</option>
+						<option value = "7">7</option>
+						<option value = "8">8</option>
+						<option value = "9">9</option>
+						<option value = "10">10</option>
+						<option value = "11">11</option>
+						<option value = "12">12</option>
+					   </select>
+
+					   <select>
+						<option value = "0">Select Year</option>
+						<option value = "1">2021</option>
+						<option value = "2">2022</option>
+					   </select>
+					   <button class = "btn-next"><a href = "payment.html">Next</a></button>
+					</div>
+					</div>
+
+				 <!--Content for home page-->
+					<div class="content" id="Contact" data-id="4">
+						<br><h3>Contact Information</h3>
+					 <form class = "contactt_form" id = "my-form">
+						<input type = "text" placeholder = "First Name" id = "first-namee" class = "name1" name = "name"  minlength=" 10" maxlength="20" />
+						<p class = "ErrorName"></p>
+						<input required type = "text" placeholder = "Last Name" name = "last-namee" class = "last-name" minlength="10" maxlength="20"/>
+						<p class = "ErrorNamme"></p>
+						<input type = "tel" placeholder = "Phone Number" name = "phone" class = "phone-number" required minlength="10" maxlength="12"/>
+						<p class = "ErrorNammee"></p>
+						<input type = "text" placeholder = "Email Address" class = "email" name = "Email" required />
+						<p class = "ErrorNammeee"></p>
+						<input type = "text" placeholder="City" class = "city" required minlength="9" maxlength="10" />
+						<p></p>
+                         <input type = "text" placeholder = "Comments" class = "comments" name= "comments"/><p></p>
+						
+						<button type = "submit" class = "submit-btn">Submit</button>
+	              
+                        </form>
+				    </div>
+					
+					
+                    
+					<!--Modal window for account registration-->
+					<aside class="modal-wrapper" id="modal-window">
+						<section class="modal-container">
+							<header class="modal-header">
+								<h2 class="modal-title">Account Registration</h2>
+								<button class="close-modal">&times;</button>
+							</header>
+							<form class="modal-content" id="signup1" class="form2">
+								<div class="form-field">
+									<label for="username">Username</label>
+									<input type="text" name="username" id="username">
+									<p></p>
+								</div>
+									<div class="form-field">
+									<label for="email">Email</label>
+									<input type="email" name="email" id="email">
+									<p></p>
+								</div>
+									<div class="form-field">
+									<label for="password">Password</label>
+									<input type="password" name="password" id="password">
+									<p></p>
+								</div>
+								<div class="form-field">
+									<label for="password">Confirm Password</label>
+									<input type="password" name="confirm-password" id="confirm-password">
+									<p></p>
+								</div>
+								<button type="submit" id="signup">signup</button>
+								<button type="reset" id="reset">reset</button>
+							</form>
+						</section>
+					</aside>
+
+
+
+					<!--Modal window for log in page-->
+					<aside class="modal-wrapper" id="modal-window-2">
+						<section class="modal-container">
+							<header class="modal-header">
+								<h2 class="modal-title">Log In</h2>
+								<button class="close-modal-2">&times;</button>
+							</header>
+							<form class="modal-content" id="Log-In" class="form">
+								<div class="form-field">
+									<label for="username">username</label>
+									<input type="text" name="username" id="username">
+									<p class = "errorUsername"></p>
+								</div>
+									<div class="form-field">
+									<label for="email">Password</label>
+									<input type="email" name="password" id="password">
+									<p class = "error"></p>
+								</div>
+								<button type="submit" id="signup">signup</button>
+								<button type="reset" id="reset">reset</button>
+							</form>
+						</section>
+					</aside>
+                 
+					<!--Scheduling-->
+
+				
+				
+					</form>
+		</article>
+	</section>
+	<script src="../Javascript/app.js">
+	</script>
+</body>
+</html>
