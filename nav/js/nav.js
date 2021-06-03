@@ -22,9 +22,6 @@ const highlightMenu = () => {
   const contactMenu = document.querySelector('#contact-page'); 
     
     
-    
-    
-
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
 
@@ -44,11 +41,7 @@ const highlightMenu = () => {
     contactMenu.classlist.remove('highlight');
     return;
   }
- else if (window.innerWidth)>960 && scrollPos ,3400){
-     servicesMenu.classList.remove('highlight');
-     contactMenu.classList.add('highlight');
-     return;
- }
+ 
   if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
