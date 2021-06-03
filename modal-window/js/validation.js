@@ -33,7 +33,7 @@ const checkEmail = () => {
     if (!isRequired(email)) {
         showError(emailEl, 'An email address is required.');
     } else if (!isEmailValid(email)) {
-        showError(emailEl, 'That is not a valid email.')
+        showError(emailEl, 'That is not a valid email address.')
     } else {
         showSuccess(emailEl);
         valid = true;
