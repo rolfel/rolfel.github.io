@@ -18,12 +18,6 @@ const highlightMenu = () => {
   const servicesMenu = document.querySelector('#services-page');
   
   // Add in the const for contact page
-    
-  const contactMenu = document.querySelector('#contact-page'); 
-    
-    
-    
-    
 
   let scrollPos = window.scrollY;
   // console.log(scrollPos);
@@ -41,15 +35,10 @@ const highlightMenu = () => {
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     servicesMenu.classList.add('highlight');
     aboutMenu.classList.remove('highlight');
-    contactMenu.classlist.remove('highlight');
     return;
   }
- else if (window.innerWidth)>960 && scrollPos ,3400){
-     servicesMenu.classList.remove('highlight');
-     contactMenu.classList.add('highlight');
-     return;
- }
-  if ((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+
+  if ((elem && window.innerWIdth < 960 && scrollPos < 600) || elem) {
     elem.classList.remove('highlight');
   }
 };
