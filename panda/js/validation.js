@@ -1,5 +1,6 @@
 const usernameEl = document.querySelector('#username');
 const emailEl = document.querySelector('#email');
+const phoneEl = document.querySelector('#phone'); 
 const passwordEl = document.querySelector('#password');
 const confirmPasswordEl = document.querySelector('#confirm-password');
 
@@ -16,7 +17,7 @@ const checkUsername = () => {
     const username = usernameEl.value.trim();
 
     if (!isRequired(username)) {
-        showError(usernameEl, 'Please enter a username.');
+        showError(usernameEl, 'Please enter your name.');
     } else if (!isBetween(username.length, min, max)) {
         showError(usernameEl, `Username must be between ${min} and ${max} characters.`)
     } else {
@@ -40,6 +41,24 @@ const checkEmail = () => {
     }
     return valid;
 };
+
+
+const checkPhone = () => {
+    let valid = false;
+    const phone = phoneEl.value.trim();
+    if (!isRequired(phone)) {
+        showError(phoneEl, 'A phone numebr is required.');
+    }
+    else {
+        showSuccess(phoneEl);
+        valid = true;
+    }
+    return valid;
+};
+
+
+
+
 
 const checkPassword = () => {
     let valid = false;
