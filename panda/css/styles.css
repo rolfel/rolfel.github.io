@@ -46,6 +46,11 @@ height: 80px;
     width: 100%;
   }
 
+#navbar-logo2 {
+    padding-right: 15px;
+    vertical-align: bottom;
+    
+}
 
 /*nav bar new */
 @media screen and (max-width: 660px) {
