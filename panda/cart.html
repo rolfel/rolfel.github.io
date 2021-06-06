@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panda Garden Cart</title>
+        <link href="css/formstyles.css" rel="stylesheet">
+    </head>
+    <body>
+    
+<!-- Nav Bar -->
+       
+                 
+            
+        <nav class="navbar">
+      <div class="navbar-container">
+        <a href = "images/banner.jpg"></a><a href="#home" id="navbar-logo">Logo</a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-links" id="home-page">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-links" id="menu-page">Menu</a>
+          </li>
+         <li class="navbar-item">
+            <a href="#contact" class="navbar-links" id="contact-page"
+              >Contact</a
+              >
+          </li>
+        </ul>
+      </div>
+    </nav>
+        
+<!-- Introduction -->
+           
+            <section>
+                <h2>Cart</h2>
+                <p>Total Due: $10.75
+                    Tax: $0.86
+                    Amount Due: $11.61
+            </p>
+                
+<!-- Add Buttons to Trigger Modal Windows -->
+            
+                
+            <button class= "checkout" id="open-modal">Checkout</button>                   
+            </section>
+            
+<!-- First Modal Window -->
+           
+            <aside class="modal-wrapper" id="modal-window">
+                <section class="modal-container">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Checkout - Contact Information</h2>
+                        <button class="close-modal">&times;</button>
+                    </header>
+                    <form class="modal-content" id="signup" class="form" action="php/test.php" method="POST">
+                        <div class="form-field">
+                            <label for="username">Name</label>
+                            <input type="text" name="username" id="username">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="password">Phone Number</label>
+                            <input type="tel" name="telephone" id="telephone">
+                            <p></p>
+                        </div>
+                        <button type="submit" id="signup">Next</button>
+                    </form>
+                </section>
+            </aside>
+                     
+                        
+        </main>
+        
+<!-- Footer -->
+       
+        <footer>
+            <p><span>Questions? Contact: </span><a href="mailto:panda@garden.edu">panda@garden.edu</a></p>
+        </footer>
+        
+<!-- Link the JavaScript -->
+        
+        <script src="js/modal.js"></script>
+       
+        <!-- Form Validation -->
+        
+        <!-- Open/Close Modal Window -->
+        
+    </body>
+</html>
