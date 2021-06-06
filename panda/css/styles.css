@@ -43,8 +43,8 @@ main {
 
 
 .checkout {
-	background-color:forestgreen;
-	color:#ddd;
+	background-color:#444;
+	color:white;
 }
 
 .checkout:active,
