@@ -3,7 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1IjoibHVjeXJvbGZlNDIxIiwiYSI6ImNrbzM4Nzl0YzBjZjAyb
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [-120.548840, 46.994110],
-      zoom: 11
+      zoom: 30
       });
       
       // Add the search bar control to the map.
