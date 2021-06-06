@@ -26,7 +26,7 @@ height: 80px;
   max-width: 1300px;
   margin: 0 auto;
   padding: 0 50px;
-    background-color: floralwhite; 
+    background-color: white; 
     color: black; 
 }
 
@@ -34,13 +34,12 @@ height: 80px;
   display: flex;
   align-items: center;
   list-style: none;
-    padding-left: 10px;
 }
 
 
 
   #navbar-logo {
-    padding-left: 25px;
+    padding-left: 15px;
   }
 
   .navbar-item {
@@ -48,7 +47,7 @@ height: 80px;
   }
 
 #navbar-logo2 {
-    padding-right: 25px;
+    padding-right: 30px;
     vertical-align: bottom;
     
 }
