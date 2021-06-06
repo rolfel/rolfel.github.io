@@ -30,6 +30,22 @@ height: 80px;
     color: black; 
 }
 
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+
+
+  #navbar-logo {
+    padding-left: 25px;
+  }
+
+  .navbar-item {
+    width: 100%;
+  }
+
 body { 
  background-color: darkseagreen;
  font-family: Arial, Verdana, sans-serif;
