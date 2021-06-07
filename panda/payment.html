@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Panda Garden Payment</title>
+        <link href="css/styles.css" rel="stylesheet">
+    </head>
+    <body>
+    
+<!-- Nav Bar -->
+       
+                 
+ <nav class="navbar">
+      <div class="navbar-container">
+       <a href="index.html" id="navbar-logo"><img src="images/banner.jpg" alt="Image of Panda Garden logo" height="80px"></a>
+        <div class="navbar-toggle" id="mobile-menu">
+          <span class="bar"></span> 
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar-menu">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-links" id="home-page">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-links" id="menu-page">Menu</a>
+          </li>
+         <li class="navbar-item">
+            <a href="contact.html"#contact"" class="navbar-links" id="contact-page"
+              >Contact</a
+              >
+            </li>
+           
+        </ul>
+          <a href="cart.html" id="navbar-logo2"><img  src="images/shopping-cart.svg" alt="shopping cart logo" width="50px" height="50px" ></a>
+      </div>
+    </nav>
+        
+<!-- Introduction -->
+         <main>  
+            <section>
+                <h2>Online Payment</h2>
+        <form id="signup" class="form" action="php/test.php" method="POST">
+          <label for="username">Name on card</label>
+          <input type="text" name="username" id="username">
+          <label for="email">Card Number (no spaces or dashes)</label>
+          <input type="number" name="email" id="email">
+          <label for="password">CVC</label>
+          <input type="number" name="password" id="password">
+          <label for="password">Expiration date</label>
+          <input type="date" name="confirm-password" id="confirm-password">
+          <button type="submit" id="signup">Submit</button>
+          <button type="reset" id="reset">Reset</button>
+      </form>
+                
+<!-- Add Buttons to Trigger Modal Windows -->
+            
+                
+            <button class= "checkout" id="open-modal">Checkout</button>                   
+            </section>
+            
+<!-- First Modal Window -->
+           
+            <aside class="modal-wrapper" id="modal-window">
+                <section class="modal-container">
+                    <header class="modal-header">
+                        <h2 class="modal-title">Checkout - Contact Information</h2>
+                        <button class="close-modal">&times;</button>
+                    </header>
+                    <form class="modal-content" id="signup" class="form" action="php/test.php" method="POST">
+                        <div class="form-field">
+                            <label for="username">Name</label>
+                            <input type="text" name="username" id="username">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email">
+                            <p></p>
+                        </div>
+                            <div class="form-field">
+                            <label for="password">Phone Number</label>
+                            <input type="tel" name="telephone" id="telephone">
+                            <p></p>
+                        </div>
+                       <button onclick="location.href='https://rolfel.github.io/panda/payment.html'" type="submit" id="signup">Pay Online</button>
+                      <button onclick="location.href='https://rolfel.github.io/panda/confirmation.html' " type="submit" id="instore">Pay in Store</button>
+                    </form>
+                </section>
+            </aside>
+                     
+              
+        </main>
+        
+<!-- Footer -->
+       
+        <footer>
+            <p><span>Questions? Contact: </span><a href="mailto:panda@garden.edu">panda@garden.edu</a></p>
+        </footer>
+        
+<!-- Link the JavaScript -->
+        
+        <script src="js/modal.js"></script>
+        <script src="js/validation.js"></script>
+    
+        <!-- Form Validation -->
+        
+        <!-- Open/Close Modal Window -->
+        
+    </body>
+</html>
