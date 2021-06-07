@@ -31,7 +31,7 @@ height: 80px;
 }
 
 .navbar-menu {
-  display: inline-flex;
+  display: inline-block;
   align-items: center;
   list-style: none;
 }
