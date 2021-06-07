@@ -30,16 +30,13 @@ height: 80px;
     color: black; 
 }
 
-.navbar-menu {
-  display: flex;
+.navbar-menu li a {
+  display: block;
   align-items: center;
+    padding: 10px;
   list-style: none;
 }
 
-li {
-    display: inline-block;
-    padding: 10 px;
-}
 
   #navbar-logo {
     padding-left: 15px;
