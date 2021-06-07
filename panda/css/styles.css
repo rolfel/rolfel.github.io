@@ -31,12 +31,15 @@ height: 80px;
 }
 
 .navbar-menu {
-  display: inline-block;
+  display: flex;
   align-items: center;
   list-style: none;
 }
 
-
+li {
+    display: inline-block;
+    padding: 10 px;
+}
 
   #navbar-logo {
     padding-left: 15px;
