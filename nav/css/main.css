@@ -85,7 +85,7 @@ p {
 }
 
 .navbar-menu {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   list-style: none;
 }
