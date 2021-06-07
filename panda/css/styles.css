@@ -30,7 +30,7 @@ height: 80px;
     color: black; 
 }
 
-.navbar-menu li a {
+.navbar-menu {
   display: block;
   align-items: center;
     padding: 10px;
@@ -44,6 +44,9 @@ height: 80px;
 
   .navbar-item {
     height: 80px;
+      display: block;
+      flex: 0 1 auto;
+      
   }
 
 #navbar-logo2 {
