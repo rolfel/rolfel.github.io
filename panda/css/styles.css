@@ -32,8 +32,11 @@ height: 80px;
 
 .navbar-menu {
   display: block;
-  align-items: center;
-    padding: 10px;
+  align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
   list-style: none;
 }
 
