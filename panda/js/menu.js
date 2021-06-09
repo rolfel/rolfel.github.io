@@ -10,17 +10,6 @@ const mobileMenu = () => {
 
 menu.addEventListener('click', mobileMenu);
 
-// Show active menu when scrolling
-const highlightMenu = () => {
-  const elem = document.querySelector('.highlight');
-  const homeMenu = document.querySelector('#home-page');
-  const aboutMenu = document.querySelector('#menu-page');
-  const servicesMenu = document.querySelector('#contact-page'); 
-    
-    
-  let scrollPos = window.scrollY;
-  // console.log(scrollPos);
-
 
 
 //  Close mobile Menu when clicking on a menu item
